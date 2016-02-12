@@ -28,6 +28,8 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'carrierwave'
+gem "figaro"
+gem "fog"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
