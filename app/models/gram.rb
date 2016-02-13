@@ -1,6 +1,8 @@
 class Gram < ActiveRecord::Base
-    mount_uploader :image, ImageUploader
+    validates :image, presence: true
     validates :message, presence: true
+    
+    mount_uploader :image, ImageUploader
     
     belongs_to :user
 end
