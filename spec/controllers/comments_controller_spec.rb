@@ -11,7 +11,7 @@ RSpec.describe CommentsController, type: :controller do
           post :create, gram_id: p.id, comment: {message: 'awesome gram'}
           
           expect(response).to redirect_to root_path
-          expect(p.comment.length).to eq 1
+          expect(p.comments.length).to eq 1
           expect(p.comments.first.message).to eq "awesome gram"
         end
         
